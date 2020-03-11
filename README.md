@@ -1,7 +1,7 @@
 # Applied-Machine-Learning
 Applied Machine Learning (Course Projects/Assignments)
 
-- This is my course project submitted for ***CS-498: Applied Machine Learning*** at UIUC.
+- This is my course projects/Assignments submitted for ***CS-498: Applied Machine Learning*** at UIUC.
 
 # Author
 Bahman Sheikh
