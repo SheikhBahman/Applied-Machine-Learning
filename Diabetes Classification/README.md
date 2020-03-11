@@ -23,6 +23,6 @@ Without using libraries:
 Adjust the developed code in part A so that, for attribute 3 (Diastolic blood pressure), attribute 4 (Triceps skinfold thickness), attribute 6 (Body mass index), and attribute 8 (Age), it regards a value of 0 as a missing value when estimating the class-conditional distributions, and the posterior. Compute an estimate of the accuracy of the classifier by averaging over 10 test-train splits.
 
 # Results
-![GitHub Logo](/Diabetes%20Classification/IMG/1.PNG)
+![GitHub Logo](/Diabetes%20Classification/IMG/1.png)
 
 
