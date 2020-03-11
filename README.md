@@ -10,7 +10,7 @@ Bahman Sheikh
 Python
 
 # Contents
-- Diabetes Classification[GitHub Pages](https://github.com/SheikhBahman/Applied-Machine-Learning/tree/master/Diabetes%20Classification)
+- [Diabetes Classification](https://github.com/SheikhBahman/Applied-Machine-Learning/tree/master/Diabetes%20Classification)
 - MNIST Image Classification
 - Classification With Support Vector Machines
 - Principal Component Analysis
