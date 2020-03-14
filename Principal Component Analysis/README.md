@@ -1,6 +1,8 @@
 # Description
 
-The focuses on this project/assignment is to develop a python code (without using libraries) for simple naive Bayes and decision forest classifiers and then using the developed code to perform Diabetes Classification.
+The goal of this homework is to use PCA to smooth the noise in the provided data. 
+
+We have five noisy versions of the Iris dataset, and a noiseless version. For each of the 5 noisy data sets, we should compute the principal components in two ways. In the first, use the mean and covariance matrix of the noiseless dataset. In the second, use the mean and covariance of the respective noisy datasets. Based on these components, I computed the mean squared error between the noiseless version of the dataset and each of a PCA representation using 0 (i.e. every data item is represented by the mean), 1, 2, 3, and 4 principal components. The mean squared error here should compute the sum of the squared errors over the features and compute the mean of this over the rows.
 
 # Author
 Bahman Sheikh
@@ -8,21 +10,12 @@ Bahman Sheikh
 # Programming Language
 Python
 
-# Data
-A famous collection of data on whether a patient has diabetes, known as the Pima Indians dataset, and originally owned by the National Institute of Diabetes and Digestive and Kidney Diseases can be found at Kaggle. Download this dataset from https://www.kaggle.com/kumargh/pimaindiansdiabetescsv. 
+# Output
+	• A csv file showing the numbers filled in a table set out as below, where "N" columns represents the components calculated via the noiseless dataset and the "c" columns of the noisy datasets.
+		Example: The entry corresponding to Dataset I and 2N should contain the mean squared error between the noiseless version of the dataset and the PCA representation of Dataset I, using 2 principal components computed from the mean and covariance matrix of the noiseless dataset.		
+The first part, with "N" columns asks to reconstruct the noisy datasets using the PCs of the noiseless dataset. 
+The second part, with "c" columns asks to reconstruct the noisy datasets using the PCs of the noisy dataset.
+	• A csv file containing reconstruction of Dataset I ("dataI.csv"), expanded onto 2 principal components, where mean and principal components are computed from Dataset I.
 
-# Objectives
-
-## Part A 
-Without using libraries:
-- Build a simple naive Bayes classifier to classify this data set. 
-- Use a normal distribution to model each of the class-conditional distributions.
-- Compute an estimate of the accuracy of the classifier by averaging over 10 test-train splits. Each split should randomly assign 20% of the data to test, and the rest to train.
-
-## Part B
-Adjust the developed code in part A so that, for attribute 3 (Diastolic blood pressure), attribute 4 (Triceps skinfold thickness), attribute 6 (Body mass index), and attribute 8 (Age), it regards a value of 0 as a missing value when estimating the class-conditional distributions, and the posterior. Compute an estimate of the accuracy of the classifier by averaging over 10 test-train splits.
-
-# Results
-![GitHub Logo](/Diabetes%20Classification/IMG/1.png)
 
 
