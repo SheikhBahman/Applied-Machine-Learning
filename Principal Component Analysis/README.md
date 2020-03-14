@@ -11,11 +11,11 @@ Bahman Sheikh
 Python
 
 # Output
-	• A csv file showing the numbers filled in a table set out as below, where "N" columns represents the components calculated via the noiseless dataset and the "c" columns of the noisy datasets.
-		Example: The entry corresponding to Dataset I and 2N should contain the mean squared error between the noiseless version of the dataset and the PCA representation of Dataset I, using 2 principal components computed from the mean and covariance matrix of the noiseless dataset.		
+- A csv file showing the numbers filled in a table set out as below, where "N" columns represents the components calculated via the noiseless dataset and the "c" columns of the noisy datasets.
+Example: The entry corresponding to Dataset I and 2N should contain the mean squared error between the noiseless version of the dataset and the PCA representation of Dataset I, using 2 principal components computed from the mean and covariance matrix of the noiseless dataset.		
 The first part, with "N" columns asks to reconstruct the noisy datasets using the PCs of the noiseless dataset. 
 The second part, with "c" columns asks to reconstruct the noisy datasets using the PCs of the noisy dataset.
-	• A csv file containing reconstruction of Dataset I ("dataI.csv"), expanded onto 2 principal components, where mean and principal components are computed from Dataset I.
+- A csv file containing reconstruction of Dataset I ("dataI.csv"), expanded onto 2 principal components, where mean and principal components are computed from Dataset I.
 
 
 
