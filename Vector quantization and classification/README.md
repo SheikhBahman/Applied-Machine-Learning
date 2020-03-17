@@ -1,6 +1,6 @@
 # Description
 
-The focuses on this project/assignment is to develop a python code (without using libraries) for simple naive Bayes and decision forest classifiers and then using the developed code to perform Diabetes Classification.
+This homework focuses on vector quantization and classification. More specifically, 1) data slicing, 2) vector clustering, 3) making histograms, and 4) building a multi-class classifer. 
 
 # Author
 Bahman Sheikh
@@ -9,20 +9,21 @@ Bahman Sheikh
 Python
 
 # Data
-A famous collection of data on whether a patient has diabetes, known as the Pima Indians dataset, and originally owned by the National Institute of Diabetes and Digestive and Kidney Diseases can be found at Kaggle. Download this dataset from https://www.kaggle.com/kumargh/pimaindiansdiabetescsv. 
+Obtain the actitivities of daily life dataset from the UC Irvine machine learning website (https://archive.ics.uci.edu/ml/datasets/Dataset+for+ADL+Recognition+with+Wrist-worn+Accelerometer, data provided by Barbara Bruno, Fulvio Mastrogiovanni and Antonio Sgorbissa).
 
 # Objectives
 
 ## Part A 
-Without using libraries:
-- Build a simple naive Bayes classifier to classify this data set. 
-- Use a normal distribution to model each of the class-conditional distributions.
-- Compute an estimate of the accuracy of the classifier by averaging over 10 test-train splits. Each split should randomly assign 20% of the data to test, and the rest to train.
+Build a classifier that classifies sequences into one of the 14 activities provided and evaluate its performance using average accuracy over 3 fold cross validation. 
+To do the cross validation, divide the data for each class into 3 folds separately. Then, for a given run select 2 folds from each class for training and use the remaining fold from each class for test. To make features, vector quantize, then use a histogram of cluster center. 
+(i) the average error rate over 3 fold cross validation and (ii) the class confusion matrix of classifier for the fold with the lowest error.
 
-## Part B
-Adjust the developed code in part A so that, for attribute 3 (Diastolic blood pressure), attribute 4 (Triceps skinfold thickness), attribute 6 (Body mass index), and attribute 8 (Age), it regards a value of 0 as a missing value when estimating the class-conditional distributions, and the posterior. Compute an estimate of the accuracy of the classifier by averaging over 10 test-train splits.
+## Part A 
+See if we can improve your classifier by (i) modifying the number of cluster centers in the hierarchical k-means and (ii) modifying the size of the fixed length samples.
 
 # Results
-![GitHub Logo](/Diabetes%20Classification/IMG/1.png)
+![GitHub Logo](/Vector%20quantization%20and%20classification/IMG/1.png)
+![GitHub Logo](/Vector%20quantization%20and%20classification/IMG/2.png)
+![GitHub Logo](/Vector%20quantization%20and%20classification/IMG/3.png)
 
 
