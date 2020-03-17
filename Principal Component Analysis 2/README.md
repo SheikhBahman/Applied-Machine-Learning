@@ -1,6 +1,6 @@
 # Description
 
-The focuses on this project/assignment is to develop a python code (without using libraries) for simple naive Bayes and decision forest classifiers and then using the developed code to perform Diabetes Classification.
+This homework focuses on familiarizing with low-rank approximations and multi-dimensional scaling. 
 
 # Author
 Bahman Sheikh
@@ -9,20 +9,32 @@ Bahman Sheikh
 Python
 
 # Data
-A famous collection of data on whether a patient has diabetes, known as the Pima Indians dataset, and originally owned by the National Institute of Diabetes and Digestive and Kidney Diseases can be found at Kaggle. Download this dataset from https://www.kaggle.com/kumargh/pimaindiansdiabetescsv. 
+CIFAR-10 is a dataset of 32x32 images in 10 categories, collected by Alex Krizhevsky, Vinod Nair, and Geoffrey Hinton. It is often used to evaluate machine learning algorithms. You can download this dataset from https://www.cs.toronto.edu/~kriz/cifar.html. I combine the test and train sets (all the images) and separate them by category.
 
 # Objectives
 
-## Part A 
-Without using libraries:
-- Build a simple naive Bayes classifier to classify this data set. 
-- Use a normal distribution to model each of the class-conditional distributions.
-- Compute an estimate of the accuracy of the classifier by averaging over 10 test-train splits. Each split should randomly assign 20% of the data to test, and the rest to train.
-
+## Part A
+	1. For each class, find the mean image, and compute the first 20 principal components.
+	2. Use the mean as well as the principle components to compute a low-dimensional reconstruction of each image in the class.
+	3. For each image, compute the squared difference between the original and reconstructed version, and sum this over all pixels over all channels. 
+	4. Plot the above value in the bar graph against its category/class label. 
 ## Part B
-Adjust the developed code in part A so that, for attribute 3 (Diastolic blood pressure), attribute 4 (Triceps skinfold thickness), attribute 6 (Body mass index), and attribute 8 (Age), it regards a value of 0 as a missing value when estimating the class-conditional distributions, and the posterior. Compute an estimate of the accuracy of the classifier by averaging over 10 test-train splits.
+	1. Compute a 10 x 10 distance matrix D such that D[i,j] is the Euclidean distance between the mean images of class i and class j. Square the elements of this matrix and write it out to a CSV file named partb_distances.csv. 
+	2. Perform multi-dimensional scaling with the squared distance matrix you have. Refer to the MDS section for details on how to do that.
+	3. Plot the first component along the x-axis and component 2 along the y-axis of a scatter plot. You will submit this plot.
+## Part C
+	1. Like in Part B, first compute a 10 x 10 distance matrix. However, here, D[i,j] will contain E(i → j). Let's define E(A → B).
+		○ E(A → B) = (E(A| B) + E(B|A))/2
+		○ To compute E(A|B), use the mean image of class A and the first 20 principal components of class B to reconstruct the images of class A
+		○ Use the procedure described in steps 3 and 4 of Part A to compute the mean of the sum of pixel-wise squared difference between the reconstructed and original images.
+		○ Similarly compute E(B|A).
+	2. Once we have computed D, write it out to a CSV file named partc_distances.csv.
+	3. Perform MDS with this distance matrix, plot the first component along the x-axis and component 2 along the y-axis of a scatter plot. 
+## Principal Coordinate Analysis (MDS)
+
 
 # Results
-![GitHub Logo](/Diabetes%20Classification/IMG/1.png)
+![GitHub Logo](/Principal%20Component%20Analysis%202/IMG/1.png)
+![GitHub Logo](/Principal%20Component%20Analysis%202/IMG/2.png)
 
 
