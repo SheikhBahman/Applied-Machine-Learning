@@ -14,7 +14,7 @@ Python
 - [MNIST Image Classification](https://github.com/SheikhBahman/Applied-Machine-Learning/tree/master/MNIST%20Image%20Classification)
 - [Classification With Support Vector Machines](https://github.com/SheikhBahman/Applied-Machine-Learning/tree/master/Classification%20With%20Support%20Vector%20Machines)
 - [Principal Component Analysis](https://github.com/SheikhBahman/Applied-Machine-Learning/tree/master/Principal%20Component%20Analysis)
-- [Principal Component Analysis 2]https://github.com/SheikhBahman/Applied-Machine-Learning/tree/master/Principal%20Component%20Analysis%202
+- [Principal Component Analysis 2](https://github.com/SheikhBahman/Applied-Machine-Learning/tree/master/Principal%20Component%20Analysis%202)
 - [Vector quantization and classification](https://github.com/SheikhBahman/Applied-Machine-Learning/tree/master/Vector%20quantization%20and%20classification)
 - [Outlier Detection](https://github.com/SheikhBahman/Applied-Machine-Learning/tree/master/Outlier%20Detection)
 - [Text Bag-of-Words Search and Classification](https://github.com/SheikhBahman/Applied-Machine-Learning/tree/master/Text%20Bag-of-Words%20Search%20and%20Classification)
