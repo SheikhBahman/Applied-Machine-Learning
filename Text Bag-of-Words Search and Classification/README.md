@@ -1,6 +1,6 @@
 # Description
 
-The focuses on this project/assignment is to develop a python code (without using libraries) for simple naive Bayes and decision forest classifiers and then using the developed code to perform Diabetes Classification.
+This homework focuses on implementing a bag-of-word based pipeline to retrieve similar documents and classify reviews. Specifically, text retrieval by simple nearest neighbor queries and classification of using Logistic regression.
 
 # Author
 Bahman Sheikh
@@ -9,20 +9,40 @@ Bahman Sheikh
 Python
 
 # Data
-A famous collection of data on whether a patient has diabetes, known as the Pima Indians dataset, and originally owned by the National Institute of Diabetes and Digestive and Kidney Diseases can be found at Kaggle. Download this dataset from https://www.kaggle.com/kumargh/pimaindiansdiabetescsv. 
+At http://courses.engr.illinois.edu/cs498aml/sp2019/homeworks/yelp_2k.csvyou will find a dataset of Yelp reviews. Theoriginal dataset contains 5,261,668 reviews and we select 2000 from them, where half of them for reviews with 1 and 5 stars respectively.
 
 # Objectives
 
 ## Part A 
-Without using libraries:
-- Build a simple naive Bayes classifier to classify this data set. 
-- Use a normal distribution to model each of the class-conditional distributions.
-- Compute an estimate of the accuracy of the classifier by averaging over 10 test-train splits. Each split should randomly assign 20% of the data to test, and the rest to train.
+	1. Download and import the dataset. And then extract text and stars columns as X (data) and y (label).
+	2. Convert the text into lower case then into bag-of-words representation. Without using a pre-existing list of stop-words.
+	3. Bag-of-words Analysis and Repreprocessing.
+		○ Graph the distribution of words counts vs word rank.
+		○ Identify the set of common stop words by looking at the words. 
+		○ Choose a max document frequency theshold for word occurances and a minimum word occurance to cull the less useful words.
+		○ Reprocess the data using the stop-words list determined, the max document frequency and the minimum word occurance.
+		○ Graph the updated words counts vs word rank.
+After removing stop-words, convert all the data into bag-of-words vectors for use in the next part.
 
-## Part B
-Adjust the developed code in part A so that, for attribute 3 (Diastolic blood pressure), attribute 4 (Triceps skinfold thickness), attribute 6 (Body mass index), and attribute 8 (Age), it regards a value of 0 as a missing value when estimating the class-conditional distributions, and the posterior. Compute an estimate of the accuracy of the classifier by averaging over 10 test-train splits.
-
+## Part B: Text-Retrieval
+	1. Using nearest neighbor with a cos-distance metric, find 5 reviews matching Horrible customer service.
+	2. Print the original text from the review along with the associated distance score. 
+  
+## Part C: Classification with Logistic Regression
+	1. Separate the data in train and test sets. Use 10% of the data for test.
+	2. Create a classifier based on Logistic Regression.
+	3. The accuracy on the training set and the test set of the classifier?
+	4. 
+		○ Plot a histogram of the scores on the training data.		
+		○ Choose a new threshold based on the plot and report the accuracy on the training set and the test set. 
+		○ Plot the ROC curve for your classifier.
+		○ At what false positive rate would the classifier minimize false positives while maximizing true positives?
 # Results
-![GitHub Logo](/Diabetes%20Classification/IMG/1.png)
+![GitHub Logo](/Text%20Bag-of-Words%20Search%20and%20Classification/IMG/1.png)
+![GitHub Logo](/Text%20Bag-of-Words%20Search%20and%20Classification/IMG/2.png)
+![GitHub Logo](/Text%20Bag-of-Words%20Search%20and%20Classification/IMG/3.png)
+![GitHub Logo](/Text%20Bag-of-Words%20Search%20and%20Classification/IMG/4.png)
+![GitHub Logo](/Text%20Bag-of-Words%20Search%20and%20Classification/IMG/5.png)
+![GitHub Logo](/Text%20Bag-of-Words%20Search%20and%20Classification/IMG/6.png)
 
 
