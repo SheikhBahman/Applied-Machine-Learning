@@ -7,7 +7,8 @@ Applied Machine Learning (Course Projects/Assignments)
 Bahman Sheikh
 
 # Programming Language
-Python
+- Python
+- R
 
 # Contents
 - [Diabetes Classification](https://github.com/SheikhBahman/Applied-Machine-Learning/tree/master/Diabetes%20Classification)
