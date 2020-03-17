@@ -9,6 +9,7 @@ Bahman Sheikh
 # Programming Language
 - Python
 - R
+- PyTorch
 
 # Contents
 - [Diabetes Classification](https://github.com/SheikhBahman/Applied-Machine-Learning/tree/master/Diabetes%20Classification)
